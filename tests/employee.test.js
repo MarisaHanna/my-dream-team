@@ -1,4 +1,4 @@
-const Employee = require("./assets/employee");
+const Employee = require("../Develop/employee");
 
 test("Can instantiate Employee instance", () => {
   const e = new Employee();
