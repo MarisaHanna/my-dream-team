@@ -1,0 +1,114 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>The Dream Team</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&family=Taviraj&family=Vidaloka&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/2037253f5c.js" crossorigin="anonymous"></script>
+    <style>
+    
+
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, rgb(253, 253, 253) 0%, rgba(36, 101, 240, 0.954) 100%);
+    font-family: 'Taviraj', serif;
+}
+
+.jumbotron{
+   
+    background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgba(131, 131, 131, 0.954) 100%);
+    box-shadow: 1px 1px 1px 1px rgb(70, 70, 70);
+}
+
+#engineer{
+    
+    background: radial-gradient(circle, rgb(253, 253, 253) 0%, rgba(105, 105, 105, 0.954) 100%);
+ 
+}
+
+.card {
+    
+    margin: 5px;
+    box-shadow: 1px 1px 1px 1px rgb(70, 70, 70);
+}
+
+
+    </style>
+ 
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row" id = 'header'>
+            <div class="col-12 jumbotron mb-3 team-heading">
+                <h1 class="text-center">The Rat Pack</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="team-area col-12 d-flex justify-content-center">
+              
+            
+         
+    
+     <div class="card employee-card">
+         <div class="card-header" id="engineer">
+           <h2 class="card-title">Frank</h2>
+           <h3 class="card-title"><i class="fas fa-user"></i>  Manager</h3>
+        </div>
+     
+       <div class="card-body">
+         <ul class="list-group">
+             <li class="list-group-item">ID: 1</li>
+             <li class="list-group-item">Email: <a href="mailto:{{ email }}">frank@gmail.com</a></li>
+         
+              <li class="list-group-item">Office number: 45</li>
+            </ul>
+          </div>
+         </div> 
+     <div class="card employee-card">
+         <div class="card-header" id="engineer">
+           <h2 class="card-title">Sammy</h2>
+           <h3 class="card-title"><i class="fas fa-user"></i>  Engineer</h3>
+        </div>
+     
+       <div class="card-body">
+         <ul class="list-group">
+             <li class="list-group-item">ID: 3</li>
+             <li class="list-group-item">Email: <a href="mailto:{{ email }}">sammy@gmail.com</a></li>
+         
+             <li class="list-group-item">GitHub: <a href="https://github.com/MarisaHanna" target="_blank" rel="noopener noreferrer">MarisaHanna</a></li>
+             
+            </ul>
+          </div>
+         </div> 
+     <div class="card employee-card">
+         <div class="card-header" id="engineer">
+           <h2 class="card-title">Dean</h2>
+           <h3 class="card-title"><i class="fas fa-user"></i>  Intern</h3>
+        </div>
+     
+       <div class="card-body">
+         <ul class="list-group">
+             <li class="list-group-item">ID: 4</li>
+             <li class="list-group-item">Email: <a href="mailto:{{ email }}">dean@gmail.com</a></li>
+         
+             <li class="list-group-item">School: Harvard</li>
+             
+            </ul>
+          </div>
+         </div>  
+            
+          </div>
+     </div>  
+</body>
+
+</html>   

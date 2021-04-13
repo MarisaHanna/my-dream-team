@@ -55,7 +55,7 @@ const addManager = () => {
         const teamManager = new Manager(name, id, email, officeNumber);
         myTeam.push(teamManager);
         addTeamMember();
-        console.log(officeNumber);
+        
     });
 }
 
@@ -70,7 +70,7 @@ const addTeamMember = () => {
     ])
 
     .then ((data) => {
-        console.log(data.addMember)
+        
         switch (data.addMember){
             case 'Please add an engineer':
                 addEngineer();
@@ -158,7 +158,7 @@ const addIntern = () => {
 }
 
 const compileTeam = () => {
-    console.log('trying to put it together')
+    console.log('Please wait while your team is put together....')
     const myPage = [];
     const pageStart = `
     <!DOCTYPE html>
@@ -171,7 +171,7 @@ const compileTeam = () => {
     <title>The Dream Team</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&family=Taviraj&family=Vidaloka&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/2037253f5c.js" crossorigin="anonymous"></script>
     <style>
     ${css}
@@ -190,10 +190,10 @@ const compileTeam = () => {
     <div class="container">
         <div class="row">
             <div class="team-area col-12 d-flex justify-content-center">
-                ${myTeam[0]}
-            </div>
-        </div>
-    </div>`
+              
+            
+         
+    `
 
     myPage.push(pageStart);
 
@@ -202,7 +202,7 @@ const compileTeam = () => {
      <div class="card employee-card">
          <div class="card-header" id="engineer">
            <h2 class="card-title">${myTeam[i].name}</h2>
-           <h3 class="card-title"><i class="fas fa-user"></i>${myTeam[i].role}</h3>
+           <h3 class="card-title"><i class="fas fa-user"></i>  ${myTeam[i].role}</h3>
         </div>
      
        <div class="card-body">
@@ -226,15 +226,18 @@ const compileTeam = () => {
              <li class="list-group-item">School: ${myTeam[i].school}</li>
              `
          }
-
+          teamCards +=`
+            </ul>
+          </div>
+         </div> `
          myPage.push(teamCards);
 
  }  
  
  
 const endPage = ` 
-            </ul>
-        </div>
+            
+          </div>
      </div>  
 </body>
 
@@ -247,7 +250,7 @@ const endPage = `
         if (err){
             console.log(err);
         }else {
-            console.log('Success!')
+            console.log('Success! Good luck with your team!')
         };
     })
         
